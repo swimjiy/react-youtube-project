@@ -1,0 +1,78 @@
+$bgColor: #e5e5e5;
+$white: #fff;
+$charcoal: #666;
+$lightGrey: #f8f8f8;
+$grey: #e5e5e5;
+$darkGrey: #666;
+
+// @mixin 
+.main-container {
+    background: #fff;
+
+    .logo {
+        height: 5vh;
+    }
+}
+.header {
+    background: $white;
+}
+.navbar {
+    .header-search {
+        .input-group {
+            width: 100%;
+            border: 1px solid $grey;
+
+            .form-control {
+                border: none;
+            }
+            .btn {
+                background: transparent;
+            }
+        }
+    }
+    .col-2, .col-8 {
+        padding: 0;
+    }
+    .col-10 {
+        padding-right: 0;
+    }
+}
+.main {
+    background: $grey;
+}
+
+.video-item {
+    background: $white;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+
+    .video-img {
+        flex: 40%;
+        width: 40%;
+        // padding: 0;
+        img {
+            width: 100%;
+        }
+    }
+    .video-body {
+        flex: 60%;
+        width: 60%;
+        background: $white;
+        .title {
+            height: 2.4em;
+            line-height: 1.2em;
+            font-size: 0.8em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box; 
+            -webkit-line-clamp: 2; 
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;
+        }
+        .writter {
+            font-size: 0.7em;
+            margin-bottom: 0;
+        }
+    }
+}
